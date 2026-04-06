@@ -158,9 +158,9 @@ pytest
 
 Testes cobrem:
 
-*Caminho feliz: adicionar gasto válido
-*Entrada inválida: valores negativos ou vazios
-*Caso limite: soma de múltiplos gastos
+* Caminho feliz: adicionar gasto válido
+* Entrada inválida: valores negativos ou vazios
+* Caso limite: soma de múltiplos gastos
 
 ---
 
@@ -183,12 +183,12 @@ O projeto utiliza GitHub Actions para:
 
 ## Versionamento Semântico
 
--Versão atual: 1.0.0
--Arquivo: VERSION
--Formato MAJOR.MINOR.PATCH:
- -MAJOR: mudanças grandes ou incompatíveis
- -MINOR: novas funcionalidades compatíveis
- -PATCH: correções menores
+- Versão atual: 1.0.0
+- Arquivo: VERSION
+- Formato MAJOR.MINOR.PATCH:
+ - MAJOR: mudanças grandes ou incompatíveis
+ - MINOR: novas funcionalidades compatíveis
+ - PATCH: correções menores
 
 ---
 
