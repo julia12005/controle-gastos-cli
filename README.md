@@ -1,5 +1,12 @@
 # Controle de Gastos CLI
 
+[![CI Python](https://github.com/julia12005/controle-gastos-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/julia12005/controle-gastos-cli/actions/workflows/ci.yml)
+
+## Nome do Projeto 
+Controle de Gastos CLI
+
+## Descrição
+
 Aplicação simples em Python para controle de gastos pessoais via linha de comando (CLI).
 Permite registrar despesas e visualizar o total gasto, ajudando no controle financeiro do dia a dia.
 
@@ -10,6 +17,8 @@ Permite registrar despesas e visualizar o total gasto, ajudando no controle fina
 
 ### Testes e qualidade de código
 ![Testes e lint](assets/testes.png)
+
+---
 
 ## Problema
 
@@ -23,20 +32,27 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 
 ---
 
+## Público-Alvo
+- Estudantes, profissionais e qualquer pessoa que deseja organizar suas finanças pessoais.  
+- Usuários que preferem soluções leves, sem aplicativos complexos.
+
+---
+
 ## Funcionalidades
 
-* Adicionar gasto
-* Calcular total de gastos
-* Listar gastos (opcional, se implementar)
+- Adicionar gasto com descrição e valor.  
+- Listar todos os gastos registrados.  
+- Consultar total de gastos.  
+- Validação de entradas inválidas (ex: valor negativo ou campo vazio).
 
 ---
 
 ## Tecnologias utilizadas
 
-* Python 3
+* Python 3.11
 * Pytest (testes automatizados)
 * Ruff (linting de código)
-* GitHub Actions (CI)
+* GitHub Actions (CI/CD)
 
 ---
 
@@ -71,6 +87,13 @@ controle-gastos-cli/
 ```
 
 ---
+## 📦 Requisitos e Dependências
+- Python 3.11+  
+- Instalar dependências:  
+```bash
+pip install -r requirements.txt
+```
+---
 
 ## Como executar o projeto
 
@@ -92,14 +115,6 @@ venv\Scripts\activate   # Windows
 
 ---
 
-### 3. Instalar dependências
-
-```
-pip install -r requirements.txt
-```
-
----
-
 ### 4. Executar aplicação
 
 ```
@@ -107,12 +122,45 @@ python -m src.main
 ```
 
 ---
+## Exemplos de Uso
 
-## Rodar testes
+### Adicionar gasto
+
+```bash
+> python -m src.main add
+Escolha: 1
+valor: 12.50
+descrição: Lanche
+Gasto adicionado com sucesso!
+```
+
+### Listar gastos
+
+```bash
+Escolha: 3
+{'valor': 12.5, 'descricao': 'lanche'}
+```
+
+### Ver total
+
+```bash
+Escolha: 2
+Total: R$ 12.5
+```
+
+---
+
+## Rodar todos os testes
 
 ```
 pytest
 ```
+
+Testes cobrem:
+
+*Caminho feliz: adicionar gasto válido
+*Entrada inválida: valores negativos ou vazios
+*Caso limite: soma de múltiplos gastos
 
 ---
 
@@ -133,6 +181,23 @@ O projeto utiliza GitHub Actions para:
 
 ---
 
+## Versionamento Semântico
+
+-Versão atual: 1.0.0
+-Arquivo: VERSION
+-Formato MAJOR.MINOR.PATCH:
+ -MAJOR: mudanças grandes ou incompatíveis
+ -MINOR: novas funcionalidades compatíveis
+ -PATCH: correções menores
+
+---
+
+## Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE.
+
+---
+
 ## Melhorias futuras
 
 * Interface gráfica (GUI)
@@ -147,3 +212,7 @@ O projeto utiliza GitHub Actions para:
 Projeto desenvolvido por **Julia** como parte do bootcamp.
 
 ---
+
+## Link do Repositório
+
+https://github.com/julia12005/controle-gastos-cli
