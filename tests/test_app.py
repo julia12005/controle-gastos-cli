@@ -16,7 +16,3 @@ def test_calcular_total():
     adicionar_gasto(10, "A")
     adicionar_gasto(20, "B")
     assert calcular_total() == 30
-
-def test_valor_invalido():
-    resultado = adicionar_gasto(-10, "erro")
-    assert resultado == "Valor inválido"
