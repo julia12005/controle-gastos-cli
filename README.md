@@ -32,7 +32,7 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 
 ---
 
-## Público-Alvo
+## Público-Alvo 
 - Estudantes, profissionais e qualquer pessoa que deseja organizar suas finanças pessoais.  
 - Usuários que preferem soluções leves, sem aplicativos complexos.
 
@@ -47,7 +47,7 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 
 ---
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
 * Python 3.11
 * Pytest (testes automatizados)
