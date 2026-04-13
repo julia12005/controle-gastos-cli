@@ -127,7 +127,7 @@ python -m src.main
 ### Adicionar gasto
 
 ```bash
-> python -m src.main add
+> python -m src.main
 Escolha: 1
 valor: 12.50
 descrição: Lanche
