@@ -87,7 +87,7 @@ controle-gastos-cli/
 ```
 
 ---
-## 📦 Requisitos e Dependências
+## Requisitos e Dependências
 - Python 3.11+  
 - Instalar dependências:  
 ```bash
