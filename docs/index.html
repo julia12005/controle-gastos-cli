@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de Gastos CLI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Entrega Intermediária</span>
+
+      <h1>Controle de Gastos CLI</h1>
+
+      <p>
+        Aplicação em Python para controle de gastos pessoais via terminal,
+        evoluída com integração a uma API pública de cotação de moedas.
+      </p>
+
+      <div class="buttons">
+        <a href="https://github.com/julia12005/controle-gastos-cli" target="_blank">
+          Ver Repositório
+        </a>
+        <a href="#execucao" class="secondary">
+          Como Executar
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        O projeto ajuda usuários a registrar despesas, listar gastos e consultar
+        o total gasto de forma simples, usando uma interface de linha de comando.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Funcionalidades</h2>
+        <ul>
+          <li>Adicionar gastos com descrição e valor</li>
+          <li>Listar gastos registrados</li>
+          <li>Consultar total de despesas</li>
+          <li>Consultar cotação atual do dólar</li>
+          <li>Converter valores em dólar para reais</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>API Pública</h2>
+        <p>
+          A aplicação consome a AwesomeAPI para consultar a cotação USD-BRL
+          em tempo real.
+        </p>
+        <code>https://economia.awesomeapi.com.br/json/last/USD-BRL</code>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Tecnologias</h2>
+        <ul>
+          <li>Python</li>
+          <li>Pytest</li>
+          <li>Ruff</li>
+          <li>Requests</li>
+          <li>GitHub Actions</li>
+          <li>GitHub Pages</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Qualidade</h2>
+        <ul>
+          <li>Testes automatizados</li>
+          <li>Teste de integração com API</li>
+          <li>Lint com Ruff</li>
+          <li>Pipeline CI/CD no GitHub Actions</li>
+          <li>Versionamento semântico</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Fluxo de Desenvolvimento</h2>
+      <p>
+        A evolução foi feita com Issue no GitHub, branch
+        <strong>entrega-intermediaria</strong>, commits versionados,
+        Pull Request e merge para a branch principal.
+      </p>
+    </section>
+
+    <section class="card" id="execucao">
+      <h2>Como Executar</h2>
+      <pre><code>git clone https://github.com/julia12005/controle-gastos-cli.git
+cd controle-gastos-cli
+pip install -r requirements.txt
+python -m src.main</code></pre>
+    </section>
+
+    <footer>
+      <p>
+        Projeto desenvolvido por <strong>Julia</strong> para o Bootcamp —
+        Etapa 2: Evolução, API Pública, Testes de Integração e Deploy.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
