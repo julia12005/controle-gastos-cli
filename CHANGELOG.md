@@ -4,6 +4,15 @@ Todas as mudanças relevantes deste projeto serão documentadas aqui.
 
 ---
 
+## [1.1.0] - 2026-05-13
+
+### Adicionado
+- Integração com API pública de cotação USD-BRL.
+- Nova funcionalidade para consultar cotação do dólar.
+- Conversão de valores em dólar para reais.
+- Testes de integração utilizando mock da API.
+- Evolução da aplicação na branch entrega-intermediaria.
+
 ## [1.0.0] - 2026-04-06
 
 ### Adicionado

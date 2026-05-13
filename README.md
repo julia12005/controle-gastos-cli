@@ -37,6 +37,24 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 - Usuários que preferem soluções leves, sem aplicativos complexos.
 
 ---
+## Novidades da Entrega Intermediária
+
+- Integração com API pública de cotação USD-BRL.
+- Consulta da cotação atual do dólar.
+- Conversão de valores em dólar para reais.
+- Testes de integração automatizados.
+- Evolução utilizando GitHub Issues, Branches e Pull Requests.
+- Publicação do projeto via GitHub Pages.
+
+---
+
+## Deploy
+
+Acesse a aplicação publicada:
+
+https://julia12005.github.io/controle-gastos-cli/
+
+---
 
 ## Funcionalidades
 
@@ -44,6 +62,8 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 - Listar todos os gastos registrados.  
 - Consultar total de gastos.  
 - Validação de entradas inválidas (ex: valor negativo ou campo vazio).
+- Consultar cotação atual do dólar.
+- Converter valores em dólar para reais.
 
 ---
 
@@ -56,6 +76,16 @@ Este projeto oferece uma forma simples e rápida de registrar gastos diretamente
 
 ---
 
+## API Utilizada
+
+O projeto utiliza a API pública AwesomeAPI para consulta de cotação de moedas em tempo real.
+
+Endpoint utilizado:
+
+https://economia.awesomeapi.com.br/json/last/USD-BRL
+
+---
+
 ## Estrutura do Projeto
 
 ```
@@ -64,10 +94,12 @@ controle-gastos-cli/
 ├── src/                # Código principal
 │   ├── app.py
 │   ├── main.py
+|   ├── api_cotacao.py
 |   └── __init__.py
 │
 ├── tests/              # Testes automatizados
-│   └── test_app.py
+│   ├── test_app.py
+|   └── test_api_cotacao.py
 │
 ├── .github/workflows/  # CI (GitHub Actions)
 │   └── ci.yml
@@ -115,7 +147,7 @@ venv\Scripts\activate   # Windows
 
 ---
 
-### 4. Executar aplicação
+### 3. Executar aplicação
 
 ```
 python -m src.main
@@ -140,6 +172,14 @@ Gasto adicionado com sucesso!
 Escolha: 3
 {'valor': 12.5, 'descricao': 'lanche'}
 ```
+### Consultar cotação do dolar
+
+```bash
+Escolha: 4
+{Cotação atual do dólar: US$ 1,00 = R$ 5.02
+Digite um valor em dólar para converter: 10
+US$ 10.00 equivale a R$ 50.25}
+```
 
 ### Ver total
 
@@ -161,6 +201,8 @@ Testes cobrem:
 * Caminho feliz: adicionar gasto válido
 * Entrada inválida: valores negativos ou vazios
 * Caso limite: soma de múltiplos gastos
+* Integração com API pública de cotação
+* Conversão de dólar para real
 
 ---
 
@@ -183,7 +225,7 @@ O projeto utiliza GitHub Actions para:
 
 ## Versionamento Semântico
 
-- Versão atual: 1.0.0
+- Versão atual: 1.1.0
 - Arquivo: VERSION
 - Formato MAJOR.MINOR.PATCH:
  - MAJOR: mudanças grandes ou incompatíveis
@@ -195,6 +237,19 @@ O projeto utiliza GitHub Actions para:
 ## Licença
 
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE.
+
+---
+
+## Fluxo de Desenvolvimento
+
+Nesta entrega intermediária, o desenvolvimento foi realizado seguindo práticas utilizadas no mercado:
+
+- Criação de Issue no GitHub
+- Desenvolvimento em branch separada
+- Integração com API pública
+- Testes automatizados
+- Integração contínua com GitHub Actions
+- Pull Request para merge na branch principal
 
 ---
 
