@@ -101,6 +101,11 @@ controle-gastos-cli/
 │   ├── test_app.py
 |   └── test_api_cotacao.py
 │
+├── docs/             
+│   ├── index.html
+|   └── css/
+|        └── style.css
+│
 ├── .github/workflows/  # CI (GitHub Actions)
 │   └── ci.yml
 |
